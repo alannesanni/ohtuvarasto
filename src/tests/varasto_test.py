@@ -63,7 +63,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_ota_varastosta_kaikki(self):
         self.varasto.lisaa_varastoon(5)
-        self.assertEqual(self.varasto.ota_varastosta(7), 5)
+        self.assertEqual(self.varasto.ota_varastosta(7), 0)
 
     def test_str(self):
         self.assertEqual(str(self.varasto), "saldo = 0, vielä tilaa 10")
