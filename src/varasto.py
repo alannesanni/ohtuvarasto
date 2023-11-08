@@ -42,11 +42,5 @@ class Varasto:
 
         return maara
 
-    def rikki(self):
-        for i in range(3):
-            for j in range(3):
-                for k in range(4):
-                    print("rikki on")
-                    
     def __str__(self):
         return f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()}"
